@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <meta http-equiv="Cache-control" content="public">
+
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+ 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+ 
+  <h1 class="titulo">Programa código secreto</h1>
+  
+  <main class="main">
+    <section class="form box">
+      <form action="">
+        <label for="input-texto">Ingrese solo minúsculas, sin acento</label>
+        <input onkeypress="return/[a-z]/i.test(event.key)" class="text-input" type="text" name="input-texto"  id="input-texto" placeholder="Ingrese el texto aqui">
+        <input class="btn" type="submit" value="encriptar" id="btn-encriptar" >
+        <input class="btn" type="submit" value="desencriptar" id="btn-desencriptar" >
+        <input class="btn" type="submit" value="limpiar"  id="clean" onclick="limpiar()">
+      </form>
+      
+    </section>
+  
+    <section class="msg box">
+      <h3 id="">Mensaje encriptado:</h3>
+      <input class="text-input" type="text" id="msg"></input>
+      <input class="btn" type="submit" value="copiar" id="btn-copy" onclick="copiarTexto()">
+    </section>
+
+    <footer class="footer">
+      <p> Mireya Peña</p>
+      <p>Oracle One Challenge Programaciòn 2022.</p>
+      <p><a id="textofooter" href="https://www.aluracursos.com/">Alura</a></p>
+      <p> <a id="textofooter1" href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin/">linkedin </a> </p>
+     
+     
+     
+    </footer>
+  </main>
+
+  
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
